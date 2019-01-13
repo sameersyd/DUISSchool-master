@@ -227,7 +227,7 @@ public class HomeActivity extends AppCompatActivity implements BottomNavigationV
                     return true;
 
                 case R.id.navdraw_track:
-                    startActivity(new Intent(HomeActivity.this,TrackActivity.class));
+                    startActivity(new Intent(HomeActivity.this,MapsActivity.class));
                     drawerLayout.closeDrawer(GravityCompat.START);
                     return true;
 

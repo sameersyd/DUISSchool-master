@@ -40,6 +40,15 @@ dependencies {
     //Firebase Dependencies
     implementation 'com.google.firebase:firebase-core:16.0.1'
     implementation 'com.google.firebase:firebase-messaging:17.1.0'
+    implementation 'com.google.firebase:firebase-auth:16.0.2'
+    implementation 'com.google.firebase:firebase-firestore:17.0.4'
+
+    //Google Play Services for Maps
+    implementation 'com.google.android.gms:play-services-maps:15.0.1'
+    // Maps utils (required for custom markers)
+    implementation 'com.google.maps.android:android-maps-utils:0.5+'
+    // Google play services for location information
+    implementation 'com.google.android.gms:play-services-location:15.0.1'
 
     //Pusher library
     implementation 'com.pusher:push-notifications-android:1.0.2'

@@ -155,7 +155,7 @@ public class HomeFragment extends Fragment implements View.OnClickListener{
         trackBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                view.getContext().startActivity(new Intent(getContext(),TrackActivity.class));
+                view.getContext().startActivity(new Intent(getContext(),MapsActivity.class));
             }
         });
         feesBtn.setOnClickListener(new View.OnClickListener() {

@@ -15,4 +15,6 @@
 
     <string name="shared_preference">shared_preference</string>
 
+    <string name="title_activity_maps">Map</string>
+
 </resources>
