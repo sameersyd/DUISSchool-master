@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#F3BA1D"
+    tools:context=".AttendanceFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:focusableInTouchMode="true">
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/fragment_attendence_topConstrain"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="30dp"
+                android:background="#101E3D">
+
+                <ImageView
+                    android:id="@+id/fragment_attendence_boyImg"
+                    android:layout_width="55dp"
+                    android:layout_height="55dp"
+                    android:layout_marginBottom="24dp"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginTop="24dp"
+                    android:src="@drawable/home_boy"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="24dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/fragment_attendence_boyImg"
+                    app:layout_constraintStart_toEndOf="@+id/fragment_attendence_boyImg"
+                    app:layout_constraintTop_toTopOf="@+id/fragment_attendence_boyImg">
+
+                    <TextView
+                        android:id="@+id/fragment_attendence_studentName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-condensed"
+                        android:textColor="#FFFFFF"
+                        android:textSize="16dp" />
+
+                    <TextView
+                        android:id="@+id/fragment_attendence_studentClass"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/fragment_attendence_studentName"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="sans-serif-condensed"
+                        android:textStyle="bold"
+                        android:textColor="#F3BA1D"
+                        android:textSize="14dp" />
+
+                </RelativeLayout>
+
+            </android.support.constraint.ConstraintLayout>
+
+            <RelativeLayout
+                android:id="@+id/fragment_attendence_studentAttBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:layout_marginTop="-30dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_below="@id/fragment_attendence_topConstrain"
+                android:background="@drawable/profilefragment_info">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true">
+
+                    <ImageView
+                        android:id="@+id/fragment_attendence_absentImg"
+                        android:layout_width="8dp"
+                        android:layout_height="8dp"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/attendance_absent"/>
+
+                    <TextView
+                        android:id="@+id/fragment_attendence_absentTxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="Absent"
+                        android:textColor="#212121"
+                        android:textSize="11dp"
+                        android:layout_toRightOf="@id/fragment_attendence_absentImg"
+                        android:layout_marginLeft="7dp"/>
+
+                    <ImageView
+                        android:id="@+id/fragment_attendence_presentImg"
+                        android:layout_width="8dp"
+                        android:layout_height="8dp"
+                        android:layout_marginLeft="7dp"
+                        android:layout_toRightOf="@id/fragment_attendence_absentTxt"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/attendance_present"/>
+
+                    <TextView
+                        android:id="@+id/fragment_attendence_presentTxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="Present"
+                        android:textSize="11dp"
+                        android:textColor="#212121"
+                        android:layout_toRightOf="@id/fragment_attendence_presentImg"
+                        android:layout_marginLeft="7dp"/>
+
+                    <ImageView
+                        android:id="@+id/fragment_attendence_lateImg"
+                        android:layout_width="8dp"
+                        android:layout_height="8dp"
+                        android:layout_marginLeft="7dp"
+                        android:layout_toRightOf="@id/fragment_attendence_presentTxt"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/attendance_late"/>
+
+                    <TextView
+                        android:id="@+id/fragment_attendence_lateTxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="Late"
+                        android:textSize="11dp"
+                        android:textColor="#212121"
+                        android:layout_toRightOf="@id/fragment_attendence_lateImg"
+                        android:layout_marginLeft="7dp"/>
+
+                    <ImageView
+                        android:id="@+id/fragment_attendence_halfdayImg"
+                        android:layout_width="8dp"
+                        android:layout_height="8dp"
+                        android:layout_marginLeft="7dp"
+                        android:layout_toRightOf="@id/fragment_attendence_lateTxt"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/attendance_halfday"/>
+
+                    <TextView
+                        android:id="@+id/fragment_attendence_halfdayTxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="HalfDay"
+                        android:textSize="11dp"
+                        android:textColor="#212121"
+                        android:layout_toRightOf="@id/fragment_attendence_halfdayImg"
+                        android:layout_marginLeft="7dp"/>
+
+                    <ImageView
+                        android:id="@+id/fragment_attendence_holidayImg"
+                        android:layout_width="8dp"
+                        android:layout_height="8dp"
+                        android:layout_marginLeft="7dp"
+                        android:layout_toRightOf="@id/fragment_attendence_halfdayTxt"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/attendance_holiday"/>
+
+                    <TextView
+                        android:id="@+id/fragment_attendence_holidayTxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="Holiday"
+                        android:textSize="11dp"
+                        android:textColor="#212121"
+                        android:layout_toRightOf="@id/fragment_attendence_holidayImg"
+                        android:layout_marginLeft="7dp"/>
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <com.applandeo.materialcalendarview.CalendarView
+                android:id="@+id/fragment_attendence_calendarView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="20dp"
+                android:layout_below="@id/fragment_attendence_studentAttBtn" />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
+

@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".HomeFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:focusableInTouchMode="true">
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/fragment_home_topConstrain"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#101E3D">
+
+                <ImageView
+                    android:id="@+id/fragment_home_boyImg"
+                    android:layout_width="55dp"
+                    android:layout_height="55dp"
+                    android:layout_marginBottom="24dp"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginTop="24dp"
+                    android:src="@drawable/home_boy"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="24dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/fragment_home_boyImg"
+                    app:layout_constraintStart_toEndOf="@+id/fragment_home_boyImg"
+                    app:layout_constraintTop_toTopOf="@+id/fragment_home_boyImg">
+
+                    <TextView
+                        android:id="@+id/fragment_home_studentName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-condensed"
+                        android:textColor="#FFFFFF"
+                        android:textSize="16dp" />
+
+                    <TextView
+                        android:id="@+id/fragment_home_studentClass"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/fragment_home_studentName"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="sans-serif-condensed"
+                        android:textStyle="bold"
+                        android:textColor="#F3BA1D"
+                        android:textSize="14dp" />
+
+                </RelativeLayout>
+
+            </android.support.constraint.ConstraintLayout>
+
+            <TableLayout
+                android:id="@+id/fragment_home_tableLayout"
+                android:layout_below="@id/fragment_home_topConstrain"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="35dp">
+
+                <TableRow>
+
+                    <LinearLayout
+                        android:id="@+id/fragment_home_attendBtn"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_weight="1"
+                        android:background="@drawable/fragment_home_backmain"
+                        android:padding="15dp">
+
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/home_attendance"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="Attend"
+                            android:textColor="#000000"
+                            android:textSize="12dp"
+                            android:fontFamily="sans-serif-condensed"
+                            android:textStyle="bold"
+                            android:layout_margin="10dp"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/fragment_home_messageBtn"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_weight="1"
+                        android:layout_marginRight="3dp"
+                        android:layout_marginLeft="3dp"
+                        android:background="@drawable/fragment_home_backmain"
+                        android:padding="15dp">
+
+                        <ImageView
+                            android:layout_width="45dp"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/home_notification"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="Notifi"
+                            android:textColor="#000000"
+                            android:textSize="12dp"
+                            android:fontFamily="sans-serif-condensed"
+                            android:textStyle="bold"
+                            android:layout_margin="10dp"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/fragment_home_profileBtn"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_weight="1"
+                        android:background="@drawable/fragment_home_backmain"
+                        android:padding="15dp">
+
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/home_profile"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="Profile"
+                            android:textColor="#000000"
+                            android:textSize="12dp"
+                            android:fontFamily="sans-serif-condensed"
+                            android:textStyle="bold"
+                            android:layout_margin="10dp"/>
+
+                    </LinearLayout>
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_marginTop="3dp">
+
+                    <LinearLayout
+                        android:id="@+id/fragment_home_marksBtn"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_weight="1"
+                        android:background="@drawable/fragment_home_backmain"
+                        android:padding="15dp">
+
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/home_marks"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="Marks"
+                            android:textColor="#000000"
+                            android:textSize="12dp"
+                            android:fontFamily="sans-serif-condensed"
+                            android:textStyle="bold"
+                            android:layout_margin="10dp"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/fragment_home_trackBtn"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_weight="1"
+                        android:layout_marginRight="3dp"
+                        android:layout_marginLeft="3dp"
+                        android:background="@drawable/fragment_home_backmain"
+                        android:padding="15dp">
+
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/home_track"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="Track"
+                            android:textColor="#000000"
+                            android:textSize="12dp"
+                            android:fontFamily="sans-serif-condensed"
+                            android:textStyle="bold"
+                            android:layout_margin="10dp"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/fragment_home_feesBtn"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_weight="1"
+                        android:background="@drawable/fragment_home_backmain"
+                        android:padding="15dp">
+
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/home_fees"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="Fees"
+                            android:textColor="#000000"
+                            android:textSize="12dp"
+                            android:fontFamily="sans-serif-condensed"
+                            android:textStyle="bold"
+                            android:layout_margin="10dp"/>
+
+                    </LinearLayout>
+
+                </TableRow>
+
+            </TableLayout>
+            
+            <RelativeLayout
+                android:layout_below="@id/fragment_home_tableLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#F0F0F0"
+                android:layout_marginTop="35dp">
+
+                <android.support.constraint.ConstraintLayout
+                    android:id="@+id/fragment_home_constrainAct"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp">
+
+                    <ImageView
+                        android:id="@+id/fragment_home_activitiesImg"
+                        android:layout_width="40dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/home_activities"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/fragment_home_activitiesTxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:fontFamily="sans-serif-condensed"
+                        android:text="ACTIVITIES"
+                        android:textColor="#333333"
+                        android:textSize="18dp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toEndOf="@id/fragment_home_activitiesImg"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </android.support.constraint.ConstraintLayout>
+                
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/fragment_home_actRecycler"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="40dp"
+                    android:layout_below="@id/fragment_home_constrainAct"/>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

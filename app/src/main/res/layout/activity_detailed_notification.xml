@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F0F0F0"
+    tools:context=".DetailedNotificationActivity">
+
+    <RelativeLayout
+        android:id="@+id/detailedNoti_rela"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#101E3D">
+
+        <TextView
+            android:id="@+id/fees_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Notification"
+            android:textColor="#FFFFFF"
+            android:textSize="20dp"
+            android:layout_centerVertical="true"
+            android:fontFamily="sans-serif-condensed"
+            android:layout_centerHorizontal="true"
+            android:textStyle="bold"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/detailedNoti_titleRela"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/detailedNoti_rela"
+        android:layout_marginTop="45dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginLeft="25dp"
+        android:background="@drawable/card_design">
+
+        <TextView
+            android:id="@+id/detailedNoti_titleTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:textStyle="bold"
+            android:layout_centerVertical="true"
+            android:textSize="18dp"
+            android:textColor="#212121"/>
+
+        <TextView
+            android:id="@+id/detailedNoti_dateTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:textStyle="bold"
+            android:textSize="14dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:textColor="#A1A1A1"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/detailedNoti_msgRela"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/detailedNoti_titleRela"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginLeft="25dp"
+        android:background="@drawable/card_design">
+
+        <TextView
+            android:id="@+id/detailedNoti_msgTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:textSize="15dp"
+            android:textColor="#212121" />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/detailedNoti_closeBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/detailedNoti_msgRela"
+        android:layout_marginTop="45dp"
+        android:text="CLOSE"
+        android:textSize="18dp"
+        android:backgroundTint="#35466C"
+        android:fontFamily="sans-serif-condensed"
+        android:elevation="6dp"
+        android:textColor="#ffffff"
+        android:paddingRight="70dp"
+        android:paddingLeft="70dp"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"/>
+
+</RelativeLayout>

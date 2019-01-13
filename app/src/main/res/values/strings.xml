@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Roots Foster Learning</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_attendence">Attendance</string>
+    <string name="title_profile">Profile</string>
+    <string name="title_marks">Marks</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+
+    <string name="msg_principal">principal</string>
+    <string name="msg_admin">admin</string>
+    <string name="msg_class_teacher">class_teacher</string>
+
+    <string name="shared_preference">shared_preference</string>
+
+</resources>

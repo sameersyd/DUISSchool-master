@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F3BA1D"
+    tools:context=".FeesActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:id="@+id/fees_topRela"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="#101E3D">
+
+                <TextView
+                    android:id="@+id/fees_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="FEES"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20dp"
+                    android:layout_marginTop="23dp"
+                    android:fontFamily="sans-serif-condensed"
+                    android:layout_centerHorizontal="true"
+                    android:textStyle="bold"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/fees_topRelaTwo"
+                android:layout_below="@id/fees_topRela"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-120dp"
+                android:background="@android:color/transparent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@drawable/card_design"
+                    android:elevation="10dp"
+                    android:paddingBottom="15dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginLeft="20dp">
+
+                    <TextView
+                        android:id="@+id/fees_nameTxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:textColor="#101E3D"
+                        android:textSize="25dp"
+                        android:layout_marginTop="15dp"
+                        android:fontFamily="sans-serif-condensed"
+                        android:textStyle="bold"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:textColor="#101E3D"
+                            android:textSize="16dp"
+                            android:layout_weight="1"
+                            android:fontFamily="sans-serif-condensed"
+                            android:text="Admission No."/>
+
+                        <TextView
+                            android:id="@+id/fees_admissionTxt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:textColor="#101E3D"
+                            android:textSize="16dp"
+                            android:gravity="end"
+                            android:layout_weight="1"
+                            android:paddingEnd="20dp"
+                            android:fontFamily="sans-serif-condensed"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:textColor="#101E3D"
+                            android:textSize="16dp"
+                            android:layout_weight="1"
+                            android:fontFamily="sans-serif-condensed"
+                            android:text="Roll No."/>
+
+                        <TextView
+                            android:id="@+id/fees_rollTxt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:textColor="#101E3D"
+                            android:textSize="16dp"
+                            android:layout_weight="1"
+                            android:gravity="end"
+                            android:paddingEnd="20dp"
+                            android:fontFamily="sans-serif-condensed"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:textColor="#101E3D"
+                            android:textSize="16dp"
+                            android:layout_weight="1"
+                            android:fontFamily="sans-serif-condensed"
+                            android:text="Class"/>
+
+                        <TextView
+                            android:id="@+id/fees_classTxt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:textColor="#101E3D"
+                            android:textSize="16dp"
+                            android:layout_weight="1"
+                            android:gravity="end"
+                            android:paddingEnd="20dp"
+                            android:fontFamily="sans-serif-condensed"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:textColor="#101E3D"
+                            android:textSize="16dp"
+                            android:layout_weight="1"
+                            android:fontFamily="sans-serif-condensed"
+                            android:text="Section"/>
+
+                        <TextView
+                            android:id="@+id/fees_sectionTxt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:textColor="#101E3D"
+                            android:textSize="16dp"
+                            android:layout_weight="1"
+                            android:gravity="end"
+                            android:paddingEnd="20dp"
+                            android:fontFamily="sans-serif-condensed"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/fees_feesTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:textColor="#101E3D"
+                android:textSize="23dp"
+                android:layout_weight="1"
+                android:layout_below="@id/fees_topRelaTwo"
+                android:fontFamily="sans-serif-condensed"
+                android:text="FEES"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"/>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/fees_recyclerview"
+                android:layout_below="@id/fees_feesTitle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#F3BA1D" />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

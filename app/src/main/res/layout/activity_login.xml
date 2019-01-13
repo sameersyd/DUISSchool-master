@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/login_bck"
+        android:scaleType="centerCrop"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="100dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <EditText
+            android:id="@+id/login_usernameEdit"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:hint="Username"
+            android:textColor="#FFFFFF"
+            android:fontFamily="sans-serif-condensed"
+            android:background="@drawable/edittext_login"
+            android:paddingLeft="16dp"
+            android:inputType="textEmailAddress"
+            android:layout_marginRight="25dp"
+            android:layout_marginLeft="25dp"/>
+
+        <EditText
+            android:id="@+id/login_passwordEdit"
+            android:layout_below="@id/login_usernameEdit"
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:hint="Password"
+            android:textColor="#FFFFFF"
+            android:inputType="textPassword"
+            android:fontFamily="sans-serif-condensed"
+            android:background="@drawable/edittext_login"
+            android:paddingLeft="16dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginLeft="25dp"/>
+
+        <RelativeLayout
+            android:id="@+id/login_loginBtn"
+            android:layout_below="@id/login_passwordEdit"
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:fontFamily="sans-serif-condensed"
+            android:background="@drawable/login_btn"
+            android:paddingLeft="16dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginLeft="25dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="LOGIN"
+                android:fontFamily="sans-serif-condensed"
+                android:textSize="18dp"
+                android:textColor="#101E3D"
+                android:textStyle="bold"
+                android:layout_margin="10dp"
+                android:layout_centerVertical="true"/>
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/right_arrow"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="20dp"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

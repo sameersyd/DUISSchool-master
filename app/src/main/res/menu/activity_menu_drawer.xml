@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/navdraw_home"
+            android:icon="@drawable/nav_home"
+            android:title="Home" />
+        <item
+            android:id="@+id/navdraw_attendance"
+            android:icon="@drawable/nav_attendance"
+            android:title="Attendance" />
+        <item
+            android:id="@+id/navdraw_notifications"
+            android:icon="@drawable/nav_notification"
+            android:title="Notifications" />
+        <item
+            android:id="@+id/navdraw_homework"
+            android:icon="@drawable/nav_homework"
+            android:title="Homework" />
+        <item
+            android:id="@+id/navdraw_marks"
+            android:icon="@drawable/nav_marks"
+            android:title="Marks" />
+        <item
+            android:id="@+id/navdraw_track"
+            android:icon="@drawable/nav_track"
+            android:title="Track Location" />
+
+        <item
+            android:id="@+id/navdraw_profile"
+            android:icon="@drawable/nav_profile"
+            android:title="Profile" />
+
+        <item
+            android:id="@+id/navdraw_aboutschool"
+            android:icon="@drawable/nav_aboutschool"
+            android:title="About School" />
+
+        <item
+            android:id="@+id/navdraw_contact"
+            android:icon="@drawable/nav_contact"
+            android:title="Contact" />
+
+        <item
+            android:id="@+id/navdraw_logout"
+            android:icon="@drawable/nav_logout"
+            android:title="Logout" />
+
+    </group>
+</menu>

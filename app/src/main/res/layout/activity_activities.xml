@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F3BA1D"
+    tools:context=".ActivitiesActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:id="@+id/activities_topRela"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="#101E3D">
+
+                <TextView
+                    android:id="@+id/activities_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="FEES"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20dp"
+                    android:layout_marginTop="23dp"
+                    android:fontFamily="sans-serif-condensed"
+                    android:layout_centerHorizontal="true"
+                    android:textStyle="bold"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/activities_topRelaTwo"
+                android:layout_below="@id/activities_topRela"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:elevation="6dp"
+                android:layout_marginTop="-80dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/card_design">
+
+                <ImageView
+                    android:id="@+id/activities_imageView"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="25dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginTop="25dp"
+                    android:textSize="16dp"
+                    android:layout_below="@id/activities_imageView"
+                    android:textColor="#666666"
+                    android:text="Lorem ipsum dolor sit amet, consectetur
+adipiscing elit, sed do eiusmod tempor
+incididunt ut labore et dolore magna
+aliqua.
+
+Ut enim ad minim veniam, quis nostrud
+exercitation ullamco laboris nisi ut aliquip
+ex ea commodo consequat. Duis aute irure
+dolor in reprehenderit in voluptate velit
+esse cillum dolore eu fugiat nulla pariatur.
+Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt
+mollit anim id est laborum."/>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
